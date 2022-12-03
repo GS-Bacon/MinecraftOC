@@ -1,12 +1,7 @@
 local event = require("event")
+local component = require("component")
+
 while true do
-  local i,screen,x,y,button,player = event.pull("touch")
---[[
-  if button == 0 then
-    button = "left click"
-  else
-    button = "right click"
-  end
-]]--
-  print(i , screen , x , y , button , player)
+  local _,_,x,y,button,player = event.pull("touch")
+  component.gpu.set(x,y,"X")
 end
