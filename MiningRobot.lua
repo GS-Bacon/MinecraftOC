@@ -5,7 +5,7 @@ local ToolSlot=1
 local StartMaker=2
 
 local function MiningFront()
-    if robot.detectFront() then
+    if robot.detect() then
         robot.swing()
         robot.suck()
     end
@@ -20,7 +20,7 @@ end
 
 while true do
     MiningFront()
-    if robot.detectFront()then
+    if robot.detect()then
         robot.forward()
     end
     MiningUp()
