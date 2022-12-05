@@ -20,7 +20,7 @@ end
 
 while true do
     MiningFront()
-    if robot.detect()then
+    if robot.detect()==false then
         robot.forward()
     end
     MiningUp()
