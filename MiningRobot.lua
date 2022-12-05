@@ -24,4 +24,5 @@ while true do
         robot.forward()
     end
     MiningUp()
+    os.sleep(0.2)
 end
